@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		889EDB6EC77D61DBFEA6E4E4 /* Pods_Singleton_Net.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9161A328465D41ADD97DFB68 /* Pods_Singleton_Net.framework */; };
 		D5B55662256FC8EE00AA9F46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55661256FC8EE00AA9F46 /* AppDelegate.swift */; };
 		D5B55664256FC8EE00AA9F46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55663256FC8EE00AA9F46 /* SceneDelegate.swift */; };
 		D5B55666256FC8EE00AA9F46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B55665256FC8EE00AA9F46 /* ViewController.swift */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		46E48ABF82CBE33F761CA8DA /* Pods-Singleton&Net.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singleton&Net.release.xcconfig"; path = "Target Support Files/Pods-Singleton&Net/Pods-Singleton&Net.release.xcconfig"; sourceTree = "<group>"; };
+		9161A328465D41ADD97DFB68 /* Pods_Singleton_Net.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Singleton_Net.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BAACD205E9522C93D1A07427 /* Pods-Singleton&Net.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Singleton&Net.debug.xcconfig"; path = "Target Support Files/Pods-Singleton&Net/Pods-Singleton&Net.debug.xcconfig"; sourceTree = "<group>"; };
 		D5B5565E256FC8EE00AA9F46 /* Singleton&Net.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Singleton&Net.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B55661256FC8EE00AA9F46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D5B55663256FC8EE00AA9F46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				889EDB6EC77D61DBFEA6E4E4 /* Pods_Singleton_Net.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5AB1605D8A191BD4F3C10077 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BAACD205E9522C93D1A07427 /* Pods-Singleton&Net.debug.xcconfig */,
+				46E48ABF82CBE33F761CA8DA /* Pods-Singleton&Net.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B17661B843D0CA424192C828 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9161A328465D41ADD97DFB68 /* Pods_Singleton_Net.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D5B55655256FC8EE00AA9F46 = {
 			isa = PBXGroup;
 			children = (
 				D5B55660256FC8EE00AA9F46 /* Singleton&Net */,
 				D5B5565F256FC8EE00AA9F46 /* Products */,
+				5AB1605D8A191BD4F3C10077 /* Pods */,
+				B17661B843D0CA424192C828 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +80,31 @@
 		D5B55660256FC8EE00AA9F46 /* Singleton&Net */ = {
 			isa = PBXGroup;
 			children = (
-				D5B55661256FC8EE00AA9F46 /* AppDelegate.swift */,
-				D5B55663256FC8EE00AA9F46 /* SceneDelegate.swift */,
-				D5B55665256FC8EE00AA9F46 /* ViewController.swift */,
+				D5B5568D256FD88100AA9F46 /* Main */,
 				D5B55667256FC8EE00AA9F46 /* Main.storyboard */,
-				D5B5566A256FC8F200AA9F46 /* Assets.xcassets */,
-				D5B5566C256FC8F200AA9F46 /* LaunchScreen.storyboard */,
+				D5B5568E256FD89000AA9F46 /* Other */,
 				D5B5566F256FC8F200AA9F46 /* Info.plist */,
 			);
 			path = "Singleton&Net";
+			sourceTree = "<group>";
+		};
+		D5B5568D256FD88100AA9F46 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D5B55665256FC8EE00AA9F46 /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D5B5568E256FD89000AA9F46 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D5B5566C256FC8F200AA9F46 /* LaunchScreen.storyboard */,
+				D5B55663256FC8EE00AA9F46 /* SceneDelegate.swift */,
+				D5B55661256FC8EE00AA9F46 /* AppDelegate.swift */,
+				D5B5566A256FC8F200AA9F46 /* Assets.xcassets */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +114,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B55672256FC8F200AA9F46 /* Build configuration list for PBXNativeTarget "Singleton&Net" */;
 			buildPhases = (
+				BF3F42493429E679545D1865 /* [CP] Check Pods Manifest.lock */,
 				D5B5565A256FC8EE00AA9F46 /* Sources */,
 				D5B5565B256FC8EE00AA9F46 /* Frameworks */,
 				D5B5565C256FC8EE00AA9F46 /* Resources */,
+				EBAEE5E206912B532B31465F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +173,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BF3F42493429E679545D1865 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Singleton&Net-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAEE5E206912B532B31465F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singleton&Net/Pods-Singleton&Net-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Singleton&Net/Pods-Singleton&Net-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Singleton&Net/Pods-Singleton&Net-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D5B5565A256FC8EE00AA9F46 /* Sources */ = {
@@ -283,6 +367,7 @@
 		};
 		D5B55673256FC8F200AA9F46 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAACD205E9522C93D1A07427 /* Pods-Singleton&Net.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +387,7 @@
 		};
 		D5B55674256FC8F200AA9F46 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E48ABF82CBE33F761CA8DA /* Pods-Singleton&Net.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
